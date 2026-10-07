@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#143b37">
+  <meta name="description" content="A free, interactive DCO interview study lab. Learn hardware, networking, Linux, and operations. Practice scenarios and build your interview stories.">
+  <title>DCO Study Lab · Interview preparation</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./content.js" defer></script>
+  <script src="./practice.js" defer></script>
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <aside id="sidebar" aria-label="Main navigation">
+    <a class="brand" href="#home"><span class="brand-icon" aria-hidden="true">▤</span><span>DCO<span class="brand-sub">STUDY LAB</span></span></a>
+    <p class="nav-label">YOUR WORKSPACE</p>
+    <nav id="nav"></nav>
+    <div class="sidebar-bottom"><p class="nav-label">A LITTLE, EVERY DAY</p><p>Understand it.<br>Explain it.<br>Practice it.</p><a href="#settings" class="save-indicator"><span class="status-dot"></span><span id="storage-label">Progress stays on this device</span></a></div>
+  </aside>
+  <div id="backdrop" hidden></div>
+  <div class="workspace">
+    <header class="topbar">
+      <button class="icon-button mobile-menu" id="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <span class="breadcrumb">THE PREPARATION WORKSPACE</span>
+      <form id="search-form" role="search"><label class="sr-only" for="search">Search the study guide</label><span aria-hidden="true">⌕</span><input id="search" placeholder="Find a topic…" type="search" autocomplete="off"><button class="search-submit" aria-label="Search">↵</button></form>
+      <a href="#settings" class="date-chip" id="date-chip">16 OCT <span>INTERVIEW</span></a>
+    </header>
+    <main id="main" tabindex="-1"></main>
+    <footer class="site-footer"><span>Independent preparation. Not affiliated with Amazon.</span><a href="#resources">Sources & free resources ↗</a></footer>
+  </div>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <dialog id="confirm-dialog"><h2 id="confirm-title">Reset progress?</h2><p>This removes only this study lab’s saved work on this browser. Export a backup first if you want to keep it.</p><div class="button-row"><button class="button secondary" id="cancel-reset">Keep my progress</button><button class="button danger" id="confirm-reset">Reset study lab</button></div></dialog>
+  <input id="import-file" type="file" accept="application/json,.json" hidden>
+  <noscript><p class="noscript">This interactive guide needs JavaScript. Enable it to use the lessons, quizzes, and study plan.</p></noscript>
+</body>
+</html>
